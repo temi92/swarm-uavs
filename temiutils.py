@@ -43,8 +43,11 @@ class QuadController(object):
  
    @arm.setter
    def arm(self,value):
-       if not self.vehicle.armed:
-           self.vehicle.armed = True
+       if bool(value) != self.vehicle.armed:
+           if value:
+               self.vehicle.armed = True
+           else:
+               self.vehicle.armed = False
    @property 
    def airspeed(self):
        return self.vehicle.airspeed

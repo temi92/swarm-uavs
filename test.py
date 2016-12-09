@@ -2,7 +2,7 @@ import argparse
 import time
 from dronekit import connect
 from math import radians,cos,sin,asin,sqrt,pi
-from temi_utils import QuadController
+from temiutils import QuadController
 
 def altered_position(original_location,dEast,dNorth=0):
    earth_radius = 6378137.0

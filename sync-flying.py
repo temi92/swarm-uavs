@@ -4,7 +4,7 @@ import threading
 import Queue
 from dronekit import connect,VehicleMode,LocationGlobalRelative
 from math import radians,cos,sin,asin,sqrt,pi
-from temi_utils import QuadController
+from temiutils import QuadController
 
 parser = argparse.ArgumentParser(description="synchronous movement for 2 uavs (arguments given should be in metres)")
 parser.add_argument("master_address",help="path to master_vehicle address")
